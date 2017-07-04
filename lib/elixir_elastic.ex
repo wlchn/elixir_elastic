@@ -317,7 +317,7 @@ defmodule ElixirElastic do
     JSX.encode!(term, opts)
   end
 
-  #doc "private functions"
+  # "private functions"
   defp __merge__(map1, map2) do
     Map.merge(map1, map2, fn(_k, v1, v2) ->
       v2 || v1

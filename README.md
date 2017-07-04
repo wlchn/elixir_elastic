@@ -4,8 +4,6 @@ A simple Elixir Elasticsearch HTTP client.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
 1. Add `elixir_elastic` to your list of dependencies in `mix.exs`:
 
   ```elixir
@@ -22,14 +20,16 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   end
   ```
 
-3. In config/dev.exs, configure `elixir_elastic`:
+## Configuration
+
+In config/dev.exs, configure `elixir_elastic`:
 
   ```elixir
   # The default uri is http://127.0.0.1:9200
   config :elixir_elastic, :uri, "http://127.0.0.1:9200"
   ```
 
-## Getting Started
+## Usage
 
 1. Index a document:
 

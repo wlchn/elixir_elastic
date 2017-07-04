@@ -45,7 +45,7 @@ defmodule ElixirElastic.Mixfile do
   defp package do
     [
       name: :elixir_elastic,
-      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*", "test", "config"],
+      files: ["lib", "mix.exs", "README*", "LICENSE*", "test", "config", "deps"],
       maintainers: ["wlchn"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/wlchn/elixir_elastic"}

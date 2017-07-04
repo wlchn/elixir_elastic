@@ -2,12 +2,18 @@ defmodule ElixirElastic.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :elixir_elastic,
-     version: "0.1.0",
-     elixir: "~> 1.3",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps()]
+    [
+      app: :elixir_elastic,
+      version: "0.1.0",
+      elixir: "~> 1.3",
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      description: description(),
+      package: package(),
+      deps: deps(),
+      name: "ElixirElastic",
+      source_url: "https://github.com/wlchn/elixir_elastic"
+    ]
   end
 
   # Configuration for the OTP application

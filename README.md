@@ -36,7 +36,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   ```elixir
   import ElixirElastic
 
-  put("/my_index/articles/1", [title: "elastic", content: "elasticsearch article content..."])
+  put("/my_index/articles/1", [title: "faded", content: "You were the shadow to my light ..."])
   # {:ok, 201,
   #  %{_id: "1", _index: "my_index", _type: "articles", _version: 1, created: true}}
   ```
@@ -46,16 +46,16 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   get("/my_index/articles/1")
   #  {:ok, 200,
   #   %{_id: "1", _index: "my_index",
-  #     _source: %{content: "elasticsearch ...", title: "elastic"}, _type: "articles",
+  #     _source: %{content: "You were the shadow to my light ...", title: "faded"}, _type: "articles",
   #     _version: 1, found: true}}
   ```
 3. Simplified search:
 
   ```elixir
-  get("/my_index/articles/_search?q=title:jane")
+  get("/my_index/articles/_search?q=title:faded")
   #  {:ok, 200,
   #   %{_shards: %{failed: 0, successful: 5, total: 5},
-  #     hits: %{hits: [%{_id: "1", _index: "my_index", _score: 0.30685282,
-  #          _source: %{content: "elasticsearch ...", title: "elastic"}, _type: "articles"}],
-  #       max_score: 0.30685282, total: 1}, timed_out: false, took: 10}}
+  #     hits: %{hits: [%{_id: "1", _index: "my_index", _score: 0.35987286,
+  #          _source: %{content: "You were the shadow to my light ...", title: "faded"}, _type: "articles"}],
+  #       max_score: 0.35987286, total: 1}, timed_out: false, took: 10}}
   ```

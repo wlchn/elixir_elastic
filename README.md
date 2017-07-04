@@ -6,28 +6,28 @@ A simple Elixir Elasticsearch HTTP client.
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add `elixir_elastic` to your list of dependencies in `mix.exs`:
+1. Add `elixir_elastic` to your list of dependencies in `mix.exs`:
 
-    ```elixir
-    def deps do
-      [{:elixir_elastic, "~> 0.1.0"}]
-    end
-    ```
+  ```elixir
+  def deps do
+    [{:elixir_elastic, "~> 0.1.0"}]
+  end
+  ```
 
-  2. Ensure `elixir_elastic` is started before your application:
+2. Ensure `elixir_elastic` is started before your application:
 
-    ```elixir
-    def application do
-      [applications: [:elixir_elastic]]
-    end
-    ```
+  ```elixir
+  def application do
+    [applications: [:elixir_elastic]]
+  end
+  ```
 
-  3. In config/dev.exs, configure `elixir_elastic`:
+3. In config/dev.exs, configure `elixir_elastic`:
 
-    ```elixir
-    # The default uri is http://127.0.0.1:9200
-    config :elixir_elastic, :uri, "http://127.0.0.1:9200"
-    ```
+  ```elixir
+  # The default uri is http://127.0.0.1:9200
+  config :elixir_elastic, :uri, "http://127.0.0.1:9200"
+  ```
 
 ## Getting Started
 

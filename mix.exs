@@ -33,7 +33,10 @@ defmodule ElixirElastic.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [ {:exjsx, "~> 3.2.0"} ]
+    [
+      {:exjsx, "~> 3.2.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
   end
 
   defp description do

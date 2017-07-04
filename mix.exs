@@ -29,4 +29,20 @@ defmodule ElixirElastic.Mixfile do
   defp deps do
     [ {:exjsx, "~> 3.2.0"} ]
   end
+
+  defp description do
+    """
+    A simple Elixir Elasticsearch HTTP client.
+    """
+  end
+
+  defp package do
+    [
+      name: :elixir_elastic,
+      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*", "test", "config"],
+      maintainers: ["wlchn"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/wlchn/elixir_elastic"}
+    ]
+  end
 end
